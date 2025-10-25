@@ -9,7 +9,7 @@ Please watch the ACM MM'25 MPV in our [project-page][4] for a quick introduction
 ---
 ## Introduction
 
-JAX's implementation of NeuroPump ([paper][1]). Based on Mip-NeRF 360 ([github][3]).
+JAX's implementation of NeuroPump ([paper][5]). Based on Mip-NeRF 360 ([github][3]).
 
 ## Prerequisites
 
@@ -95,3 +95,4 @@ This project is freely available for non-profit non-commercial use, and may be r
 [2]: https://github.com/deborahLevy130/seathru_NeRF
 [3]: https://github.com/google-research/multinerf
 [4]: https://ygswu.github.io/NeuroPump.github.io/
+[5]: https://arxiv.org/pdf/2412.15890
