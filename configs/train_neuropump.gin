@@ -1,0 +1,31 @@
+Config.dataset_loader = 'llff'
+Config.near = 0.2
+Config.far = 1e6
+Config.factor = 0
+Config.forward_facing = False
+Config.batch_size = 2048
+Config.eval_on_train = False 
+Config.eval_only_once = True
+Config.eval_save_ray_data = True 
+Config.lr_init = 0.00025
+Config.lr_final = 0.0000025
+Config.max_steps = 40000
+
+Model.opaque_background = True
+
+
+Model.raydist_fn = @jnp.reciprocal
+
+PropMLP.warp_fn = @coord.contract
+PropMLP.net_depth = 4
+PropMLP.net_width = 256
+
+PropMLP.disable_density_normals = True
+PropMLP.disable_rgb = True
+
+NerfMLP.warp_fn = @coord.contract
+NerfMLP.net_depth = 8
+NerfMLP.net_width = 1024
+
+
+NerfMLP.disable_density_normals = True
